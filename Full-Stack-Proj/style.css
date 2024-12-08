@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: url('Rock.jpg') no-repeat center center fixed; /* Ensure no repeat */
+    background-size: cover; /* Ensures the image covers the whole screen */
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Prevents any content overflow */
+}
+
+.login-form {
+    position: relative;
+    background: rgba(255, 255, 255, 0.7);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+.login-form h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #f35d5d;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.login-form form {
+    margin: 20px 0;
+}
+
+.login-form input {
+    outline: none;
+    margin-bottom: 15px;
+    font-size: 16px;
+    color: #666;
+    text-align: left;
+    padding: 14px 20px;
+    width: 100%;
+    display: inline-block;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    background: #f7fafc;
+    border-radius: 25px;
+    transition: 0.3s ease;
+}
+
+.login-form input:focus {
+    background: transparent;
+    border: 1px solid #f35d5d;
+}
+
+.login-form button {
+    font-size: 18px;
+    color: #fff;
+    width: 100%;
+    background: #f35d5d;
+    border: none;
+    padding: 14px 15px;
+    font-weight: 700;
+    border-radius: 25px;
+    transition: 0.3s ease;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.login-form button:hover {
+    background: #e02c2c;
+    color: #fff;
+}
+
+.login-form p {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #666;
+}
+
+.login-form p a {
+    color: #f35d5d;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.login-form p a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 736px) {
+    .login-form {
+        width: 90%;
+        padding: 30px;
+    }
+}
